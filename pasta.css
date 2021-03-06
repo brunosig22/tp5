@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
 
 div {
   display: inline-block;
   float: left;
-  width: calc(100vw/3 - 2vw);
-  height: 550px; 
+  width: calc(100vw / 3 - 2vw);
+  height: 550px;
 }
 
 body {
@@ -17,10 +17,10 @@ header {
   padding: 0;
 }
 
-h1 {
-  font-family: 'Sigmar One', cursive;
+#title {
+  font-family: "Sigmar One", cursive;
   text-decoration: underline;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 h4 {
@@ -39,12 +39,11 @@ li {
 
 #ingredients {
   background-color: red;
- 
 }
 
-#ingredients li { 
+#list1 {
   font-family: Arial;
-  
+  display: none;
 }
 
 #ingredients li span {
@@ -54,7 +53,10 @@ li {
 
 #equipment {
   background-color: white;
+}
 
+#list2 {
+  display: none;
 }
 
 #equipment li:nth-child(5) {
@@ -63,18 +65,21 @@ li {
 
 #equipment li:nth-child(6) {
   color: green;
-  
 }
 
 #directions {
   background-color: green;
-  
+  width: 35%;
+}
+
+#list3 {
+  display: none;
 }
 
 #source {
   padding: 50px;
   clear: both;
- }
+}
 
 .highlight {
   background-color: yellow;
@@ -82,27 +87,24 @@ li {
 
 #notes {
   border-style: solid;
-  width: 100%; 
+  width: 100%;
 }
 
 img {
- max-height: 500px;
- max-width: 100%;
- position: absolute;
- left: 25px; 
+  max-height: 500px;
+  max-width: 100%;
+  display: inline;
+  left: 25px;
 }
 
 @media (orientation: portrait) {
   div {
-    width: 100vw; 
+    width: 100vw;
   }
 }
 
 @media (max-width: 575px) {
-  
   body {
-    background-color: lightblue; 
+    background-color: lightblue;
   }
-  
-  
 }
